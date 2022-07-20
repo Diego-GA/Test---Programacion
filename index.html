@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Programacion</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -15,71 +22,88 @@
         <h1 class="header__titulo">Test - Programación</h1>
     </header>
 
-    <section class="ejercicio">
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 1</h2>
         
         <p class="ejercicio1__enunciado">
             Obtén el segundo segmento “resumen” de la siguiente URL:
             https://afore.profuturo.mx/calculadora/resumen/usuario/11
         </p>
+
+        <h3 id="segmento"></h3>
     </section>
 
-    <section class="ejercicio">
+     <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 2</h2>
         
-        <p class="ejercicio1__enunciado">
+        <p class="ejercicio2__enunciado">
             Muestra en pantalla fecha y hora (YYYY-mm-dd - hr:mm:ss), obtenidas del siguiente servicio REST:
             http://worldtimeapi.org/api/timezone/America/Mexico_Cit
         </p>
+
+        <h3 id="hora"></h3>
     </section>
 
-    <section class="ejercicio">
+     <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 3</h2>
         
-        <p class="ejercicio1__enunciado">
+        <p class="ejercicio3__enunciado">
             Muestra en pantalla una cuenta regresiva a la media noche.
         </p>
 
         <h3 id="reloj"></h4>
-    </section>
+    </section>  
 
-    <section class="ejercicio">
+
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 4</h2>
         
         <p class="ejercicio1__enunciado">
             Obtén el valor promedio del siguiente array: [{calificacion:80},{calificacion:40},{calificacion:90}]
         </p>
+
+        <h3 id="promedio"></h3>
     </section>
 
-    <section class="ejercicio">
+
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 5</h2>
         
         <p class="ejercicio1__enunciado">
             Obtén el numero con mayor valor del siguiente array: [704,384,981,76,89,531,458,130,548,931,48,748]
 
         </p>
+        <h3 id="mayor"></h3>
     </section>
 
-
-    <section class="ejercicio">
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 6</h2>
         
         <p class="ejercicio1__enunciado">
             Obtén el numero con menor valor del siguiente array: [275,229,55,314,15,764,956,292,827,19,31]
-
         </p>
+        <h3 id="menor"></h3>
     </section>
 
-
-    <section class="ejercicio">
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 7</h2>
         
         <p class="ejercicio1__enunciado">
             Obtén el numero de coincidencias del valor “activo” en el siguiente array: [{status:”activo”},{status:”inactivo”},{status:”activo” }]
         </p>
+
+        <h3 id="activos"></h3>
     </section>
 
-    <section class="ejercicio">
+    <!-- EJERCICIO -->
+    <section class="ejercicio mt-5">
         <h2>Ejercicio 8</h2>
         
         <p class="ejercicio1__enunciado">
@@ -104,9 +128,13 @@
         </div>
     </div>
 
-    <!-- <script src="./js/ejercicio1.js"></script> -->
-   <!-- <script src="./js/ejercicio2.js"></script>  -->
-    <!-- <script src="./js/ejercicio5.js"></script> -->
+    <script src="./js/ejercicio1.js"></script>
+    <script src="./js/ejercicio2.js"></script> 
     <script src="./js/ejercicio3.js"></script>
+
+    <script src="./js/ejercicio4.js"></script>
+    <script src="./js/ejercicio5.js"></script>
+    <script src="./js/ejercicio6.js"></script>
+    <script src="./js/ejercicio7.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 const cuentaHora = (mediaNoche) =>{
 
+
     let horaActual = new Date()
     let resto = ( new Date(mediaNoche) - horaActual + 1000) / 1000;
 
@@ -15,7 +16,10 @@ const cuentaHora = (mediaNoche) =>{
     return { resto , segundos, minutos, horas }
 };
 
-const contador = (mediaNoche) =>{
+const contador = () =>{
+    let mediaNoche = new Date();
+    mediaNoche.setHours(23,59,59)
+
     const reloj = document.getElementById("reloj");
 
     const controlador = setInterval( () => {
@@ -26,6 +30,10 @@ const contador = (mediaNoche) =>{
             clearInterval(timerUpdate)
         }
     },1000);
-
 }
 
+contador();
+
+
+console.log("\nEJERCICIO 3");
+console.log("Para el tercer ejercicio me enfoque utilizando el objeto Date() dentro de JS, realice las operaciones necesarias para cambiar los daatos")

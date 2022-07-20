@@ -22,5 +22,10 @@ const funcionContadora = ( miObjeto ) => {
 
 let [activos, inactivos ] = funcionContadora(miObjeto);
 
-console.log(`Personas Activas: ${activos}`);
-console.log(`Personas Inactivas: ${inactivos}`);
+let mensaje = `Personas Activas: ${activos} --- Personas Inactivas: ${inactivos}`
+let totalActivos = document.getElementById("activos");
+totalActivos.innerHTML = mensaje;
+
+
+console.log("\nEJERCICIO 7")
+console.log("Para este ejercicio igual utilice reduce")
